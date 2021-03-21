@@ -1,0 +1,8 @@
+{
+    "editor.tabSize": 2,
+    "prettier.jsxSingleQuote": true,
+    "prettier.packageManager": "yarn",
+    "prettier.singleQuote": true,
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.preferences.quoteStyle": "single"
+}
