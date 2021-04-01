@@ -23,6 +23,7 @@ export function NavBar() {
 
   return (
     <nav className={styles.navBar}>
+      <img src="/logo-full.svg" alt="Move-it logo" />
       <input type="checkbox" id="switch" onChange={toggleDarkMode} />
       <label htmlFor="switch">Toggle</label>
     </nav>

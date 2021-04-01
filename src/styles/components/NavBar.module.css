@@ -1,13 +1,14 @@
 .navBar{
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   width: 100%;
   background-color: var(--blue-dark);
+	z-index: 10;
 }
 
-.navBar p {
-  color: white;
+.navBar img {
+  width: 10rem;
 }
 
 .navBar > input[type=checkbox]{
@@ -19,17 +20,18 @@
 .navBar > label {
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 52px;
-	height: 27px;
+	width: 3rem;
+	height: 1.5rem;
 	background: grey;
 	border-radius: 100px;
 	position: relative;
+	top: 0.2rem;
 }
 
 .navBar > label:after {
 	content: '';
 	position: absolute;
-	top: 5px;
+	top: 0.25rem;
 	left: 5px;
 	width: 1rem;
 	height: 1rem;

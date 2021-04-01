@@ -18,12 +18,13 @@ This project uses [React](https://reactjs.org/), [Next.js](https://nextjs.org/) 
 
 ---
 
-### Personal touch
+## Personal touch
 
 Some of the features on this project were added after the course of the event.
 
 - Navbar containing a dark mode toggle
 - Added responsiveness for mobile devices
+- Routings for login and ranking pages
 
 ---
 
