@@ -74,6 +74,7 @@ export function ChallengesProvider({
     if (Notification.permission === 'granted') {
       new Notification('Novo desafio 🎉', {
         body: `Valendo ${challenge.amount}xp!`,
+        icon: '/favicon.png',
       });
     }
   }

@@ -23,11 +23,11 @@
 }
 
 .countdownContainer > div span:first-child {
-  border-right: 1px solid #f0f1f3;
+  border-right: 1px solid var(--background);
 }
 
 .countdownContainer > div span:last-child {
-  border-left: 1px solid #f0f1f3;
+  border-left: 1px solid var(--background);
 }
 
 .countdownContainer > span {
@@ -45,7 +45,7 @@
   border: 0;
   border-radius: 5px;
   background: var(--blue);
-  color: var(--white);
+  color: #f2f3f5;
   font-size: 1.25rem;
   font-weight: 600;
   transition: background-color 0.2s;

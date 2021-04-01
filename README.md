@@ -18,6 +18,15 @@ This project uses [React](https://reactjs.org/), [Next.js](https://nextjs.org/) 
 
 ---
 
+### Personal touch
+
+Some of the features on this project were added after the course of the event.
+
+- Navbar containing a dark mode toggle
+- Added responsiveness for mobile devices
+
+---
+
 ## Run this application locally
 
 You can visit this application on https://moveit-n1vzgx0fm-moisesjsalmeida.vercel.app/
@@ -26,6 +35,7 @@ But if you want to run it locally, follow these steps:
 
 **1. Clone this repository**
 
+```https://github.com/moisesjsalmeida/nlw-moveit.git```
 
 **2. Install dependencies**
 
