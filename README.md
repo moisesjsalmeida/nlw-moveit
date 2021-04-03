@@ -14,7 +14,10 @@ Gain XP and level up by completing challenges. Allow yourself a rest of your wor
 
 ## Technologies used
 
-This project uses [React](https://reactjs.org/), [Next.js](https://nextjs.org/) and [Typescript](https://www.typescriptlang.org/) on it's core. No CSS libraries for styling or additional frameworks.
+- [Typescript](https://www.typescriptlang.org/) 
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [NextAuth.js](https://next-auth.js.org)
 
 ---
 

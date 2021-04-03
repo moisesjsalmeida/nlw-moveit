@@ -1,10 +1,77 @@
 .loginPageContainer {
+  position: absolute;
   height: 100vh;
   width: 100%;
-  background: var(--background);
+  background: linear-gradient(-45deg, #414aac 10%, var(--blue) 45%, var(--blue-dark), #414aac) ;
+  overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding: 2rem 5rem;
+}
+
+.logoContainer {
+  position: absolute;
+  width: 75vw;
+  top: 1rem;
+  left: -2rem;
+  display: flex;
+  padding-top: auto;
   justify-content: center;
+  align-items: center;
+}
+
+.logoContainer div {
+  content: '';
+  background: var(--blue);
+  width: 7rem;
+  height: 18rem;
+  transform: skew(-9deg);
+  margin: 1.5rem;
+}
+
+.logoContainer .logo2 {
+  height: 25rem;
+  position: relative;
+  top: 3.5rem;
+  left: -0.5rem;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.loginContainer > img {
+  padding-bottom: 8rem;
+  width: 25rem;
+}
+
+.loginContainer h1 {
+  color: var(--white);
+  padding-bottom: 2rem;
+}
+
+.loginContainer p {
+  color: var(--white);
+}
+
+.loginContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.25rem;
+  margin-top: 2rem;
+  width: 75%;
+  background: var(--background);
+  color: #000;
+}
+
+.loginContainer button > img {
+  /* filter: invert(); */
+  height: auto;
+  width: 4rem;
 }
 
 .loginPageContainer footer {
@@ -12,48 +79,19 @@
   bottom: 0;
   font-size: 0.75rem;
   text-align: center;
-
-}
-
-.loginContainer {
-  display: flex;
-  flex-direction: column;
-  transform: translateX(50%);
-  padding-right: 15%;
-}
-
-.loginContainer img {
-  padding-bottom: 8rem;
-  width: 115%;
-}
-
-.loginContainer h1 {
-  color: var(--title);
-  padding-bottom: 2rem;
-}
-
-.loginContainer button {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 6rem;
-  padding: 0.25rem;
-  margin-top: 2rem;
-  overflow: hidden;
-}
-
-.loginContainer button img {
-  height: auto;
-  width: 5rem;
-  transform: translateY(30%);
 }
 
 @media (max-width: 425px) {
   .loginContainer {
-    transform: translateX(0);
-    padding: 5rem;
+    margin: auto;
   }
-  .loginContainer img{
+
+  .loginContainer img,
+  .loginContainer button {
     width: auto;
+  }
+
+  .logoContainer {
+    display: none;
   }
 }

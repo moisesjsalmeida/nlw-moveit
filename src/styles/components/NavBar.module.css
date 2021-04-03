@@ -9,6 +9,7 @@
 
 .navBar img {
   width: 10rem;
+	filter: brightness(0.95);
 }
 
 .navBar > input[type=checkbox]{
@@ -29,7 +30,7 @@
 }
 
 .navBar > label:after {
-	content: '';
+	content: '☀️';
 	position: absolute;
 	top: 0.25rem;
 	left: 5px;
