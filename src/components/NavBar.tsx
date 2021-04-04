@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react';
+import { signOut } from 'next-auth/client';
 import styles from '../styles/components/NavBar.module.css';
 
 export function NavBar() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
 
   function toggleDarkMode() {
     if (darkMode) {
-      document.documentElement.setAttribute('data-theme', 'light')
-      setDarkMode(false)
+      document.documentElement.setAttribute('data-theme', 'light');
+      setDarkMode(false);
     } else {
-      document.documentElement.setAttribute('data-theme', 'dark')
-      setDarkMode(true)
+      document.documentElement.setAttribute('data-theme', 'dark');
+      setDarkMode(true);
     }
   }
 
@@ -24,8 +25,16 @@ export function NavBar() {
   return (
     <nav className={styles.navBar}>
       <img src="/logo-inverted.svg" alt="Move-it logo" />
-      <input type="checkbox" id="switch" onChange={toggleDarkMode} />
-      <label htmlFor="switch">Toggle</label>
+      <div>
+        <ul>
+          <li><a href="3" onClick={() => signOut()}>Logout</a></li>
+        </ul>
+      </div>
+      <span>
+        <input type="checkbox" id="switch" onChange={toggleDarkMode} />
+        <label htmlFor="switch">Toggle</label>
+
+      </span>
     </nav>
   );
 }

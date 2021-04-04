@@ -18,6 +18,7 @@ Gain XP and level up by completing challenges. Allow yourself a rest of your wor
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
 - [NextAuth.js](https://next-auth.js.org)
+- [Supabase](https://supabase.io)
 
 ---
 
@@ -27,7 +28,7 @@ Some of the features on this project were added after the course of the event.
 
 - Navbar containing a dark mode toggle
 - Added responsiveness for mobile devices
-- Routings for login and ranking pages
+- Added a login functionality, using github OAuth
 
 ---
 
@@ -37,14 +38,23 @@ You can visit this application on https://moveit-n1vzgx0fm-moisesjsalmeida.verce
 
 But if you want to run it locally, follow these steps:
 
-**1. Clone this repository**
+### Clone this repository**
 
 ```https://github.com/moisesjsalmeida/nlw-moveit.git```
 
-**2. Install dependencies**
+### Set environment variables
+
+There is a `.env.example` file provided. You can use this structure to replicate the results. Create a `.env` file on your cloned repo and fill it with your credentials.
+
+### Run with docker
+
+If you are a Docker user, you can replace the following steps by simply running `docker-compose up -d` to use the docker image provided (though it was not used in production).
+
+### Install dependencies
 
 ```yarn install```
 
-**3. Run development Server**
+### Run development Server
 
 ```yarn dev```
+

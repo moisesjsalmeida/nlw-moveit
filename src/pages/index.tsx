@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 
 import { useSession } from 'next-auth/client';
-import Login from './login';
+import Login from '../components/Login';
 
 import styles from '../styles/pages/Home.module.css';
 
